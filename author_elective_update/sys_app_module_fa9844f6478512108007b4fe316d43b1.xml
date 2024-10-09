@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Historiv Needlt Data3</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_58872_needit_historiv_needlt_data3</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-08 07:22:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fa9844f6478512108007b4fe316d43b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Historiv Needlt Data3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_app_module_fa9844f6478512108007b4fe316d43b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-08 07:22:31</sys_updated_on>
+        <timeline_page/>
+        <title>Historiv Needlt Data3</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>bf6dbb1fdbea395438f117291396196c</instance_id>
+        <instance_name>dev220951</instance_name>
+        <name>sys_app_module_fa9844f6478512108007b4fe316d43b1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Historiv Needlt Data3</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_58872_needit_historiv_needlt_data3</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-08 07:22:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fa9844f6478512108007b4fe316d43b1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Historiv Needlt Data3</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_app_module_fa9844f6478512108007b4fe316d43b1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-08 07:22:31</sys_updated_on><timeline_page/><title>Historiv Needlt Data3</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-292235736</payload_hash>
+        <record_name>Historiv Needlt Data3</record_name>
+        <reverted_from/>
+        <source>ef234cdb477812108007b4fe316d4319</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-08 07:22:31</sys_created_on>
+        <sys_id>be9844f6478512108007b4fe316d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1926b0214c00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-08 07:22:31</sys_updated_on>
+        <type>Module</type>
+        <update_guid>b29844f6cf8512105fb62b21879f55b3</update_guid>
+        <update_guid_history>b29844f6cf8512105fb62b21879f55b3:-292235736</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Historiv Needlt Data3">2d442c3e470912108007b4fe316d4348</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-08 09:23:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>77f3cd2f547143bc806812b2ef072624</sys_id>
+        <sys_metadata>fa9844f6478512108007b4fe316d43b1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Historiv Needlt Data3</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_app_module_fa9844f6478512108007b4fe316d43b1</sys_update_name>
+        <sys_update_version display_value="sys_app_module_fa9844f6478512108007b4fe316d43b1">be9844f6478512108007b4fe316d43b3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-08 09:23:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
