@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="DELETE">
+        <access_method>btree</access_method>
+        <col_name_string>u_what_needed,u_request_type</col_name_string>
+        <index_col_name>1a51485b477812108007b4fe316d4370,8e51485b477812108007b4fe316d4351</index_col_name>
+        <logical_table_name>x_58872_needit_needit</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-10-08 02:26:53</sys_created_on>
+        <sys_id>2cf4c3ee470112108007b4fe316d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_58872_needit_needit</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_index_x_58872_needit_needit_u_what_needed_u_request_type</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-10-08 02:26:53</sys_updated_on>
+        <table display_value="NeedIt" name="x_58872_needit_needit">4a51485b477812108007b4fe316d4319</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>bf6dbb1fdbea395438f117291396196c</instance_id>
+        <instance_name>dev220951</instance_name>
+        <name>sys_index_x_58872_needit_needit_u_what_needed_u_request_type</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index"><sys_index action="INSERT_OR_UPDATE"><access_method>btree</access_method><col_name_string>u_what_needed,u_request_type</col_name_string><index_col_name>1a51485b477812108007b4fe316d4370,8e51485b477812108007b4fe316d4351</index_col_name><logical_table_name>x_58872_needit_needit</logical_table_name><sys_class_name>sys_index</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2024-10-08 02:26:53</sys_created_on><sys_id>2cf4c3ee470112108007b4fe316d433f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_58872_needit_needit</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_index_x_58872_needit_needit_u_what_needed_u_request_type</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2024-10-08 02:26:53</sys_updated_on><table display_value="NeedIt" name="x_58872_needit_needit">4a51485b477812108007b4fe316d4319</table><unique_index>false</unique_index></sys_index></record_update>]]></payload>
+        <payload_hash>1698256122</payload_hash>
+        <record_name>NeedIt: What needed, Request type</record_name>
+        <reverted_from/>
+        <source>ef234cdb477812108007b4fe316d4319</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-10-08 02:26:54</sys_created_on>
+        <sys_id>60f4c3ee470112108007b4fe316d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19269f36e210000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-10-08 02:26:54</sys_updated_on>
+        <type>Indexes</type>
+        <update_guid>a0f4c3ee730112108d2b64418bd1fa42</update_guid>
+        <update_guid_history>a0f4c3ee730112108d2b64418bd1fa42:1698256122</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-10-08 08:17:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_index">sys_index</sys_db_object>
+        <sys_id>0c839ba4ef8f4f2481f5ea5eadf45c84</sys_id>
+        <sys_metadata>2cf4c3ee470112108007b4fe316d433f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_58872_needit_needit</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_index_x_58872_needit_needit_u_what_needed_u_request_type</sys_update_name>
+        <sys_update_version display_value="sys_index_x_58872_needit_needit_u_what_needed_u_request_type">60f4c3ee470112108007b4fe316d4343</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-10-08 08:17:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
