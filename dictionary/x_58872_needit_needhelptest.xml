@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="7e640a0153611210102d50b0a0490ea0" extends="task" label="NeedHelpTest" max_length="40" name="x_58872_needit_needhelptest" type="collection">
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Request Type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="test1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="test2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="test3" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="test1" max_length="32" name="test1" read_only="true" type="string"/>
+        <element label="who" max_length="40" name="who" reference="sys_user" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+        <element label="what" max_length="50" name="what" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 06:20:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>466dd34453e11210102d50b0a0490e57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_menus</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_app_application_466dd34453e11210102d50b0a0490e57</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 06:20:36</sys_updated_on>
+        <title>test_menus</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>bf6dbb1fdbea395438f117291396196c</instance_id>
+        <instance_name>dev220951</instance_name>
+        <name>sys_app_application_466dd34453e11210102d50b0a0490e57</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 06:20:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>466dd34453e11210102d50b0a0490e57</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test_menus</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_app_application_466dd34453e11210102d50b0a0490e57</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 06:20:36</sys_updated_on><title>test_menus</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>2143479269</payload_hash>
+        <record_name>test_menus</record_name>
+        <reverted_from/>
+        <source>ef234cdb477812108007b4fe316d4319</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 06:20:36</sys_created_on>
+        <sys_id>ad7d5f4453e11210102d50b0a0490eb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192c25581650000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 06:20:36</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>a17d5f4448e11210b4ce498914a83db5</update_guid>
+        <update_guid_history>a17d5f4448e11210b4ce498914a83db5:2143479269</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="test_menus">59f16f4853e11210102d50b0a0490eb6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 06:40:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>2bb7e43d63d94a9693e48d6077952211</sys_id>
+        <sys_metadata>466dd34453e11210102d50b0a0490e57</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_menus</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_app_application_466dd34453e11210102d50b0a0490e57</sys_update_name>
+        <sys_update_version display_value="sys_app_application_466dd34453e11210102d50b0a0490e57">ad7d5f4453e11210102d50b0a0490eb5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 06:40:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
