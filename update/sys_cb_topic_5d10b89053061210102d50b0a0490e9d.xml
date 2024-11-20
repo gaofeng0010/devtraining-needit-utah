@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Virtual Agent Conversation Topic for the NeedIt application</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.68",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "513d590419024f89b279c52b7dc34f63": {
+          "id": "513d590419024f89b279c52b7dc34f63",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "I can help you report an issue"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "fd0850e3665f47909a3df51b65306bc2": {
+          "id": "fd0850e3665f47909a3df51b65306bc2",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thanks for reporting your issue to IT."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Have a great day!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "61c0c488140542ad9140afc9a6ee3bd3": {
+          "id": "61c0c488140542ad9140afc9a6ee3bd3",
+          "stepType": "TextPrompt",
+          "name": "Employee name",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Who are you look for?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK2"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK1"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "2f25dc2bbc9c47d2bb111f0be273e20c",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "dbaebc2feb30446d8212fb38057941ad": {
+          "id": "dbaebc2feb30446d8212fb38057941ad",
+          "stepType": "TableOutput",
+          "name": "find sys_user",
+          "header": {
+            "value": "",
+            "mode": "simple"
+          },
+          "displayColumnHeaders": true,
+          "dataSourceType": "table",
+          "script": "",
+          "tableName": "sys_user",
+          "sortByColumns": [],
+          "tableCondition": {
+            "mode": "glide_query",
+            "value": "first_name={{vaInputs.employee_name}}"
+          },
+          "columns": [
+            {
+              "key": "first_name",
+              "value": "First name",
+              "label": "First name"
+            },
+            {
+              "key": "last_name",
+              "value": "Last name",
+              "label": "Last name"
+            }
+          ],
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.employee_name}}",
+                      "displayValue": "Input Variables➛Employee Name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "feabb05622004d8fb91d57e88c791806": {
+          "id": "feabb05622004d8fb91d57e88c791806",
+          "stepType": "BooleanPrompt",
+          "name": "is ok",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "3d071deb51fa41ddbc7acfafa674733a",
+          "detailDescription": ""
+        },
+        "9d8685fda9ce4d0680d16f2c26c130a4": {
+          "id": "9d8685fda9ce4d0680d16f2c26c130a4",
+          "stepType": "Decision",
+          "name": "Decision"
+        }
+      },
+      "edges": [
+        {
+          "id": "0d1ba2802f7546388956fe8d45193f29",
+          "edgeType": "Edge",
+          "source": "61c0c488140542ad9140afc9a6ee3bd3",
+          "target": "dbaebc2feb30446d8212fb38057941ad",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3578e110c91d4b1d9852aac200623be8",
+          "edgeType": "Branch",
+          "source": "9d8685fda9ce4d0680d16f2c26c130a4",
+          "target": "fd0850e3665f47909a3df51b65306bc2",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.is_ok=true",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "e397e955f9bb4a80a077766ade19f6a8",
+          "edgeType": "Branch",
+          "source": "9d8685fda9ce4d0680d16f2c26c130a4",
+          "target": "61c0c488140542ad9140afc9a6ee3bd3",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.is_ok=false",
+            "mode": "query"
+          },
+          "label": "Always"
+        },
+        {
+          "id": "d781789faca24b5eb36db408fe409bc0",
+          "edgeType": "Edge",
+          "source": "513d590419024f89b279c52b7dc34f63",
+          "target": "61c0c488140542ad9140afc9a6ee3bd3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "38ad5e06d8f74c9fa28f43c641762ca3",
+          "edgeType": "Edge",
+          "source": "dbaebc2feb30446d8212fb38057941ad",
+          "target": "feabb05622004d8fb91d57e88c791806",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1b8f1e84bd664a918ed4ee326efe0b14",
+          "edgeType": "Edge",
+          "source": "feabb05622004d8fb91d57e88c791806",
+          "target": "9d8685fda9ce4d0680d16f2c26c130a4",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "2f25dc2bbc9c47d2bb111f0be273e20c": {
+      "id": "2f25dc2bbc9c47d2bb111f0be273e20c",
+      "name": "employee_name",
+      "label": "Employee Name",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTczMjA3MzYxMDI5MyBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "61c0c488140542ad9140afc9a6ee3bd3",
+      "isHidden": false
+    },
+    "3d071deb51fa41ddbc7acfafa674733a": {
+      "id": "3d071deb51fa41ddbc7acfafa674733a",
+      "name": "is_ok",
+      "label": "Is Ok",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "feabb05622004d8fb91d57e88c791806",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>Conversations test gf,change request</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Conversations test gf</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-19 08:52:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5d10b89053061210102d50b0a0490e9d</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Conversations test gf</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_5d10b89053061210102d50b0a0490e9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:56:04</sys_updated_on>
+        <title>Conversation test gf</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=5d10b89053061210102d50b0a0490e9d"/>
+</record_update>
