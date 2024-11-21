@@ -29,8 +29,17 @@
           "stepType": "Start",
           "name": "Start",
           "greetingResponse": {
-            "mode": "simple",
-            "value": ""
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How can I help you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
           }
         },
         "9e2674e3c4ac4a08823c83a2ccc1a4cd": {
@@ -38,17 +47,257 @@
           "stepType": "TerminateGoal",
           "name": "End",
           "confirmationMessage": {
-            "mode": "simple",
-            "value": ""
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "希望能帮到您！"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
           }
+        },
+        "05c2c304b01d4bc9938b225904a6b170": {
+          "id": "05c2c304b01d4bc9938b225904a6b170",
+          "stepType": "TextPrompt",
+          "name": "input",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "请输入您的问题？"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "03d9b65e84154058b59a18f501f4966a",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "bca549e052cb453bab0ecd336b89b3a8": {
+          "name": "data list",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "请选择你要问的数据库？"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "559fce3f5e7343d9805e325b4044a19e",
+          "detailDescription": "",
+          "id": "bca549e052cb453bab0ecd336b89b3a8",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "468b90ce3b5a4c15b9c1064307390d1d": {
+          "id": "468b90ce3b5a4c15b9c1064307390d1d",
+          "stepType": "TextOutput",
+          "name": "out",
+          "secure": false,
+          "value": [
+            {
+              "value": "(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessageLang(\"hi there {0}\", vaContext.getRequesterLang(), [vaInputs.first_name]);\n       } else {\n           return gs.getMessageLang(\"how are you {0}\", vaContext.getRequesterLang(), [vaInputs.last_name]);\n       }\n    */\n    var data = vaInputs.data_list;\n    var answer = vaInputs.input;\n    //调用外部接口查询\n    var result = \"result\";\n    return 'data:' + data + ',answer:' + answer + ',result:' + result;\n})()\n",
+              "mode": "script"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "6e990f10e3ec497fba79102e0ac4312a": {
+          "id": "6e990f10e3ec497fba79102e0ac4312a",
+          "stepType": "BooleanPrompt",
+          "name": "continuePlay",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "是否继续提问？"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "011f4190559f4639962e4aa674264175",
+          "detailDescription": ""
+        },
+        "351b5a0f17e2419596f6ecaf6b57dff7": {
+          "id": "351b5a0f17e2419596f6ecaf6b57dff7",
+          "stepType": "Decision",
+          "name": "yesOrNo"
         }
       },
       "edges": [
         {
+          "id": "6924dcf2895d491592dd58accf5e5c73",
+          "edgeType": "Branch",
+          "source": "351b5a0f17e2419596f6ecaf6b57dff7",
+          "target": "bca549e052cb453bab0ecd336b89b3a8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.continueplay=true",
+            "mode": "query"
+          },
+          "label": "继续提问"
+        },
+        {
+          "id": "23aa367517bc4dd0b35ab6c05679ca24",
+          "edgeType": "Branch",
+          "source": "351b5a0f17e2419596f6ecaf6b57dff7",
+          "target": "9e2674e3c4ac4a08823c83a2ccc1a4cd",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.continueplay=",
+            "mode": "query"
+          },
+          "label": "我问完了"
+        },
+        {
           "id": "df6fbb66f814459ab0495437743c7f24",
           "edgeType": "Edge",
           "source": "7f1fbae6cc3d42c293154debfccbbc49",
-          "target": "9e2674e3c4ac4a08823c83a2ccc1a4cd",
+          "target": "bca549e052cb453bab0ecd336b89b3a8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a9e73d62a1c2454f84be985f5635a20f",
+          "edgeType": "Edge",
+          "source": "bca549e052cb453bab0ecd336b89b3a8",
+          "target": "05c2c304b01d4bc9938b225904a6b170",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "eed1c545d6c5439f99d769b7f92028dd",
+          "edgeType": "Edge",
+          "source": "05c2c304b01d4bc9938b225904a6b170",
+          "target": "468b90ce3b5a4c15b9c1064307390d1d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4be044de29994677870651eb0fc777a2",
+          "edgeType": "Edge",
+          "source": "468b90ce3b5a4c15b9c1064307390d1d",
+          "target": "6e990f10e3ec497fba79102e0ac4312a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "26e9fe50414c483e8ad2eab96e26c508",
+          "edgeType": "Edge",
+          "source": "6e990f10e3ec497fba79102e0ac4312a",
+          "target": "351b5a0f17e2419596f6ecaf6b57dff7",
           "sourcePort": "",
           "targetPort": ""
         }
@@ -73,15 +322,65 @@
       "name": "user",
       "table": "sys_user",
       "varType": "reference"
+    },
+    "03d9b65e84154058b59a18f501f4966a": {
+      "id": "03d9b65e84154058b59a18f501f4966a",
+      "name": "input",
+      "label": "Input",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTczMjA5NzE5Mjg1OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "05c2c304b01d4bc9938b225904a6b170",
+      "isHidden": false
+    },
+    "559fce3f5e7343d9805e325b4044a19e": {
+      "id": "559fce3f5e7343d9805e325b4044a19e",
+      "name": "data_list",
+      "label": "Data List",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "knowledge1",
+          "value": "knowledge1"
+        },
+        {
+          "label": "knowledge2",
+          "value": "knowledge2"
+        },
+        {
+          "label": "knowledge3",
+          "value": "knowledge3",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "bca549e052cb453bab0ecd336b89b3a8",
+      "isHidden": false
+    },
+    "011f4190559f4639962e4aa674264175": {
+      "id": "011f4190559f4639962e4aa674264175",
+      "name": "continueplay",
+      "label": "ContinuePlay",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "6e990f10e3ec497fba79102e0ac4312a",
+      "isHidden": false
     }
   }
 }</graph>
-        <key_phrases>view open NeedIt Records test gf,NeedIt Request,need something,test-gf,change request</key_phrases>
+        <key_phrases>test-gf,test1</key_phrases>
         <library>false</library>
         <live_agent>false</live_agent>
         <model_type>nlu_keyword</model_type>
         <modify_confirmation_enabled>false</modify_confirmation_enabled>
-        <name>view open NeedIt Records test gf</name>
+        <name>test-gf</name>
         <nlu_intent/>
         <nlu_intent_label/>
         <nlu_model/>
@@ -97,15 +396,15 @@
         <sys_created_on>2024-11-20 02:10:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e87d1c6c53021210102d50b0a0490e6b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>view open NeedIt Records test gf</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>test-gf</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_cb_topic_e87d1c6c53021210102d50b0a0490e6b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-20 02:23:41</sys_updated_on>
-        <title>vieview open NeedIt Records test gfw ope</title>
+        <sys_updated_on>2024-11-21 02:04:22</sys_updated_on>
+        <title>test-gf</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>
     </sys_cb_topic>
